@@ -1,0 +1,25 @@
+- users
+  - id:integer
+  - name:string
+  - email:string
+  - password_digest:string
+  - admin:boolean
+  - created_at:datetime
+  - updated_at:datetime
+
+- questions
+  - id:integer
+  - title:string
+  - body:text
+  - solved:boolean
+  - user_id:integer
+  - created_at:datetime
+  - updated_at:datetime
+
+- answers
+  - id:integer
+  - body:text
+  - user_id:integer
+  - question_id:integer
+  - created_at:datetime
+  - updated_at:datetime
